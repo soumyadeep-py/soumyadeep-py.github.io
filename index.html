@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio UI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">S</span>
+      <div>
+        <p>Soumyadeep</p>
+        <small>Samanta</small>
+      </div>
+    </div>
+
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <!-- <a href="#skills">Skills</a> -->
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">Dark</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Hello, I’m</p>
+        <h1>Soumyadeep Samanta</h1>
+        <p class="hero-text">
+          Learning to build industry grade websites and solutions.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="primary-btn">View Projects</a>
+          <a href="#contact" class="secondary-btn">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-cards">
+        <article class="stat-card">
+          <span>5+</span>
+          <p>Projects completed</p>
+        </article>
+        <article class="stat-card">
+          <span>1</span>
+          <p>Years experience</p>
+        </article>
+        <article class="stat-card">
+          <span>6</span>
+          <p>Languages known</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-head">
+        <h2>About Me</h2>
+        <p>Currently persuing B.Tech at <a href="https://www.cemkolaghat.in/">College of Engineering and Management Kolaghat.</a></p>
+      </div>
+      <div class="about-grid">
+        <div>
+          <p>Although, my rank in WBJEE 2026 is 4310, I still choose CEMK for a reason. 
+          <p>I am very much interested in coding stuffs and excited to build projects that solve real-life problems. From IoT to building websites, from websites to database, I am trying to learning most of the things to build wonderful projects.</p>
+        </div>
+        <div class="about-highlights">
+          <div>
+            <h3>Design Systems</h3>
+            <p>Consistent layouts and logics.</p>
+          </div>
+          <div>
+            <h3>Interaction</h3>
+            <p>From HTML,CSS,JS to MySQL,MongoDB.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p>Works done by me during my learning journey.</p>
+      </div>
+      <div class="project-grid">
+        <!-- PROJECT : 7 SEGMENT DISPLAY -->
+        <article class="project-card">
+          <span class="project-tag">Web Design</span>
+          <span class="project-tag">Simulation</span>
+          <h3>7 SEGMENT DISPLAY</h3>
+          <p>A webpage that simulates a 7 segment display that can show heaxadecimal characters</p>
+          <a href="https://soumyadeep-py.github.io/-Hexadecimal-1-Bit-Counter-on-7-Segment-Display-Webpage-Demonstration/" class="project-cta" target="_blank"><i class="fa-solid fa-globe"></i></a>
+          <a href="https://github.com/soumyadeep-py/-Hexadecimal-1-Bit-Counter-on-7-Segment-Display-Webpage-Demonstration" class="project-cta" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </article>
+        <!-- PROJECT : TERMINAL BASED BANKING SYSTEM -->
+        <article class="project-card">
+          <span class="project-tag">Logic with DBMS</span>
+          <span class="project-tag">Simulation</span>
+          <h3>TERMINAL BASED BANKING SYSTEM</h3>
+          <p>A python program to show the implementation of SQLite with Python using an application based. This project is a casual one, just to implement Python with DBMS for basic purposes.</p>
+          <a href="https://github.com/soumyadeep-py/terminal-based-fake-banking-system" class="project-cta" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </article>
+        
+      </div>
+    </section>
+
+    <section class="section" id="certificates">
+      <div class="section-head">
+        <h2>Certificates</h2>
+        <p>Professional achievements and completed learning credentials.</p>
+      </div>
+      <div class="certificate-grid">
+        <article class="certificate-card be10X-Workshop">
+          <h3>AI Tools Workshop</h3>
+          <p>Completed a workshop where use of AI tools like ChatGPT, Google Stitch, Google Notebook, Julius, Claude AI and others were taught to use in the right way to reduce worktime.</p>
+        <span>Issued by be10X</span>
+        </article>
+        
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p>Let’s talk about your next project or idea. I’m available for freelance work and collaborations.</p>
+      </div>
+      <div class="contact-panel">
+        <div>
+          <p class="contact-label">Email</p>
+          <a href="mailto:alex@example.com">alex@example.com</a>
+        </div>
+        <div>
+          <p class="contact-label">Follow</p>
+          <div class="social-links">
+            <a href="https://github.com/soumyadeep-py" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://leetcode.com/u/Evolving__Coder/" target="_blank">
+                <i class="fa-brands fa-leetcode"></i>
+            </a>
+            <a href="https://www.youtube.com/@BitsandVolt">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
