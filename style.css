@@ -498,3 +498,7 @@ main {
     padding-right: 1.25rem;
   }
 }
+
+#clg-link:hover {
+  color: #eff7ee;
+}
