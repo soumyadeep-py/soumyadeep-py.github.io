@@ -1,5 +1,33 @@
 const toggleButton = document.getElementById("themeToggle");
+const menuToggle = document.getElementById("menuToggle");
+const navigationMenu = document.getElementById("navigationMenu");
 const root = document.documentElement;
+
+const closeMenu = () => {
+  navigationMenu.classList.remove("is-open");
+  menuToggle.setAttribute("aria-expanded", "false");
+  menuToggle.setAttribute("aria-label", "Open navigation menu");
+  menuToggle.innerHTML = '<i class="fa-solid fa-bars" aria-hidden="true"></i>';
+};
+
+menuToggle.addEventListener("click", () => {
+  const isOpen = navigationMenu.classList.toggle("is-open");
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+  menuToggle.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+  menuToggle.innerHTML = isOpen
+    ? '<i class="fa-solid fa-xmark" aria-hidden="true"></i>'
+    : '<i class="fa-solid fa-bars" aria-hidden="true"></i>';
+});
+
+navigationMenu.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", closeMenu);
+});
+
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape") {
+    closeMenu();
+  }
+});
 
 const updateThemeLabel = (isDark) => {
   toggleButton.innerHTML = isDark
