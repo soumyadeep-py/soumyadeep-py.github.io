@@ -69,5 +69,8 @@ cardLinkElements.forEach(card => {
 });
 
 document.querySelector('.be10X-Workshop').addEventListener('click', function() {
-    window.open("./Certificates/be10X Workshop.pdf", "_blank");
+    window.open("./Certificates/be10X Workshop - Attended - 2026.pdf", "_blank");
+})
+document.querySelector('.cemk-photography-2026').addEventListener('click', function() {
+    window.open("./Certificates/CEMK Photography Competition - Participation - 2026.pdf", "_blank");
 })
